@@ -10,7 +10,8 @@ import {AuthorizeService} from '../authorize.service'
 export class EmployeeDetailsComponent implements OnInit {
 
   id:any;
-  info;
+  infos:any;
+  info=[];
 
   showSpinner=true;
  
@@ -24,7 +25,8 @@ export class EmployeeDetailsComponent implements OnInit {
   getDetails(){
      this.detail.getCurrentDeatils(this.id).subscribe(data=>{
        console.log(data);
-       this.info=data;
+       this.infos=data;
+       this.info=this.infos
        this.showSpinner=false;
        console.log(this.info)
      })
