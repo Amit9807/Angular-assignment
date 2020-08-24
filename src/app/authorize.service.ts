@@ -16,7 +16,7 @@ export class AuthorizeService {
 
   text:[];
   
-  constructor(private http:HttpClient) { }
+  constructor(private https:HttpClient) { }
 
   update(val){
     this.text=val
@@ -35,7 +35,7 @@ export class AuthorizeService {
   }
 
   getCurrentDeatils(id){
-    return this.http.get('https://dummy.restapiexample.com/api/v1/employee/'+id)
+    return this.https.get('https://dummy.restapiexample.com/api/v1/employee/'+id)
     .pipe(map(res => res));
   }
   

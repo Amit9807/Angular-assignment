@@ -18,12 +18,12 @@ export class EmployeeComponent implements OnInit {
  employee:any;
  employees =[];
  
-  constructor(private http:HttpClient) { }
+  constructor(private https:HttpClient) { }
 
   showSpinner=true;
  
   ngOnInit() {
-    this.http.get('https://dummy.restapiexample.com/api/v1/employees')
+    this.https.get('https://dummy.restapiexample.com/api/v1/employees')
     .subscribe((res)=>{
       console.log("response",res);
       this.employee=res;
