@@ -15,7 +15,7 @@ export class ActivateGuard implements CanActivate {
        return true;
      }
      else{
-       alert("You mayhave to login first , Redirecting to Login");
+       alert("You may have to login first , Redirecting to Login");
        this.router.navigate(['login'])
      }
   }

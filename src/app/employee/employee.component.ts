@@ -23,7 +23,7 @@ export class EmployeeComponent implements OnInit {
   showSpinner=true;
  
   ngOnInit() {
-    this.http.get('http://dummy.restapiexample.com/api/v1/employees')
+    this.http.get('https://dummy.restapiexample.com/api/v1/employees')
     .subscribe((res)=>{
       console.log("response",res);
       this.employee=res;

@@ -35,7 +35,7 @@ export class AuthorizeService {
   }
 
   getCurrentDeatils(id){
-    return this.http.get('http://dummy.restapiexample.com/api/v1/employee/'+id)
+    return this.http.get('https://dummy.restapiexample.com/api/v1/employee/'+id)
     .pipe(map(res => res));
   }
   
