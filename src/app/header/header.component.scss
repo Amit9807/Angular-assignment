@@ -1,0 +1,59 @@
+
+@import 'src/scss/var';
+
+mat-sidenav-container{
+    height: 100%;
+    
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 25px;
+}
+
+mat-sidenav{
+    background-color: $background-color;
+    width: 250px;
+}
+
+mat-sidenav{
+    button{
+        color: black;
+        background: none;
+        border: 1px solid $background-color;
+        position: relative;
+        left: 10rem;
+    }
+    .nav{
+        align-items: center;
+        display: flex;
+        left: 5rem;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 10px;
+        color: white;
+    
+
+        .item{
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        a{
+            color: white;
+        }
+
+        a:hover{
+            color: #FF6E40;
+
+        }
+        
+
+    }
+}
+
+
+
+
+
+

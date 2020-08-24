@@ -1,0 +1,19 @@
+
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="toggle">
+    <button (click)="sidenav.close()"><mat-icon style="font-size: 30px;">close</mat-icon></button>
+    <div class="nav">
+        <a class="item" routerLink="login" (click)="sidenav.close()">Login</a>
+        <a class="item" routerLink="employee" (click)="sidenav.close()">Employee</a>
+        <!-- <a class="item" (click)="loggedOut() ">Log Out</a> -->
+      </div>
+
+  </mat-sidenav>
+    <mat-sidenav-content>
+      <button (click)="sidenav.open()" ><mat-icon style="font-size: 30px;">format_align_justify</mat-icon></button><br>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container> 
+  
+

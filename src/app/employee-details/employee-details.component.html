@@ -1,0 +1,60 @@
+
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
+ 
+<div *ngIf="!showSpinner" class="page-wrapper mt-4">
+    <div class="container-fluid">
+      
+        <div class="row">
+         <div class="col-lg-4 col-xlg-3 col-md-5">
+                <div class="card">
+                    <div class="card-block">
+                        <div class="m-t-30"> <img src="https://i8.amplience.net/i/indochino/2007_happyhour_promo_1x2?$promo-ct-grid-tile-default$" class="img-circle" width="465px" height="350" />
+                            <h4 class="card-title m-t-10 mt-4 d-flex justify-content-center" >{{info.data.employee_name}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-8 col-xlg-9 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+                        <form class="form-horizontal form-material">
+                            <div class="form-group">
+                                <label class="col-md-12 mt-4">ID</label>
+                                <div class="col-md-12">
+                                    <h3 class="card-title m-t-10 border-bottom border-secondary">{{info.data.id}}</h3>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-email" class="col-md-12">Name</label>
+                                <div class="col-md-12">
+                                    <h3 class="card-title m-t-10 border-bottom border-secondary">{{info.data.employee_name}}</h3>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">Age</label>
+                                <div class="col-md-12">
+                                    <h3 class="card-title m-t-10 border-bottom border-secondary">{{info.data.employee_age}}</h3>
+                               </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12">Salary</label>
+                                <div class="col-md-12">
+                                    <h3 class="card-title m-t-10 border-bottom border-secondary">{{info.data.employee_salary}}</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-success d-flex align-items-center my-4 mx-4">Edit</button>
+                                </div>
+                              
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+    </div>  
+

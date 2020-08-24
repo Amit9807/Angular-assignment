@@ -1,0 +1,22 @@
+
+
+<div class="form d-flex justify-content-center ">
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+  <h1 class="header d-flex justify-content-center">Sign in</h1>
+    <div class="form-group mt-4 mx-4">
+      <label for="exampleInputEmail1" class="header">Email address</label>
+      <input type="email"  class="form-control col-lg-12"  formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" >
+      <span *ngIf="email.invalid && email.touched" class="error ">Email is Invalid</span>
+    </div>
+    <div class="form-group mx-4">
+      <label for="exampleInputPassword1" class="header">Password</label>
+      <input type="password" class="form-control col-lg-12" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+      <span *ngIf="password.invalid && password.touched" class="error">password must be Length between 3 to 15</span>
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary mx-4"  >Submit</button>
+  </form>
+</div>
+
+
+ 
+

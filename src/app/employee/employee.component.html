@@ -1,0 +1,30 @@
+  
+
+<mat-spinner *ngIf="showSpinner"></mat-spinner>
+  
+<table *ngIf="!showSpinner" class="table table-striped mt-4"> 
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">Name</th>
+    <th scope="col">Salary</th>
+    <th scope="col">Age</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let e of employees; ">
+    <th scope="row">{{ e.id }}</th>
+    <td>
+      {{ e.employee_name }}
+    </td>
+    <td>{{ e.employee_salary }}</td>
+    <td>{{  e.employee_age }}</td>
+    <td><a routerLink="/employees/{{e.id}}" mat-raised-button color="warn">Details</a></td>
+  </tr>
+  </tbody>
+</table> 
+
+
+
+
