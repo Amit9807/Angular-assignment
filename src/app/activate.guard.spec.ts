@@ -1,3 +1,5 @@
+// guard
+
 import { TestBed } from '@angular/core/testing';
 
 import { ActivateGuard } from './activate.guard';

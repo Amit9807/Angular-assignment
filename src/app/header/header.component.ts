@@ -1,3 +1,5 @@
+
+
 import { Component } from '@angular/core';
 import {AuthorizeService} from '../authorize.service'
 import { Router} from '@angular/router'
@@ -14,13 +16,6 @@ export class HeaderComponent {
 
   toggle=true;
 
-  // loggedIn(){
-  //   this._authservice.loggedIn;
-  // }
 
-  // loggedOut(){
-  //   this._authservice.loggedIn=false;
-  //   this.router.navigate(['login'])
-  // }
 
 }

@@ -1,3 +1,6 @@
+
+// employee component
+
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { toTypeScript } from '@angular/compiler';
@@ -12,8 +15,6 @@ import { toTypeScript } from '@angular/compiler';
 
 
 export class EmployeeComponent implements OnInit {
-
-  
   
  employee:any;
  employees =[];
@@ -32,8 +33,6 @@ export class EmployeeComponent implements OnInit {
       console.log("emplorres",this.employees)
     })    
   }
-
-  
 
 }
 
